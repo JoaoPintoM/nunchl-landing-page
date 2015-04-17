@@ -71,6 +71,11 @@ aside {
     padding: 0;
 }
 
+// Helpers
+
+.m-b-md { margin-bottom: 25px; }
+.m-t-md { margin-top: 25px;    }
+
 // Navigation
 
 .navbar-default {
@@ -116,7 +121,7 @@ aside {
         background-color: transparent;
         border-color: fade(white, 30%);
         .navbar-header .navbar-brand {
-            color: fade(white, 70%);
+            color: white;
             &:hover,
             &:focus {
                 color: white;
@@ -124,7 +129,7 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: fade(white, 70%);
+            color: white;
             &:hover {
                 color: white;
             }
@@ -315,6 +320,46 @@ header {
 
 .btn-xl {
     padding: 15px 30px;
+}
+
+// Forms
+
+input[type="text"],
+input[type="email"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 1.25em;
+  border: solid 5px #c9c9c9;
+  transition: border 0.3s;
+  border-radius: 0;
+}
+input[type="text"]:focus,
+input[type="text"].focus,
+input[type="email"]:focus,
+input[type="email"].focus {
+  border: solid 5px #969696;
 }
 
 // Extras

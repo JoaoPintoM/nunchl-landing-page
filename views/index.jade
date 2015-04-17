@@ -1,5 +1,75 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  header
+    .header-content
+      .header-content-inner
+        h1 Ne perdez plus de temps inutilement...
+        hr
+        p
+          | Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!
+        a.btn.btn-primary.btn-xl.page-scroll(href='#about') Découvrir
+  section#about.bg-primary
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          h2.section-heading La solution à vos besoins
+          hr.light
+          p.text-faded
+            | Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
+  section#services
+    .container
+      .row
+        .col-lg-12.text-center
+          h2.section-heading À Votre Service !
+          hr.primary
+    .container
+      .row
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            i.fa.fa-4x.fa-diamond.wow.bounceIn.text-primary
+            h3 Sturdy Templates
+            p.text-muted Our templates are updated regularly so they don&apos;t break.
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            i.fa.fa-4x.fa-paper-plane.wow.bounceIn.text-primary(data-wow-delay='.1s')
+            h3 Ready to Ship
+            p.text-muted You can use this theme as is, or you can make changes!
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            i.fa.fa-4x.fa-newspaper-o.wow.bounceIn.text-primary(data-wow-delay='.2s')
+            h3 Up to Date
+            p.text-muted We update dependencies to keep things fresh.
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary(data-wow-delay='.3s')
+            h3 Made with Love
+            p.text-muted You have to make your websites with love these days!
+  aside.bg-dark
+    .container.text-center
+      .call-to-action
+        h2 Tenez moi au courant !
+        .row
+          .col-md-6.col-md-offset-3.col-sm-12.m-b-md.m-t-md
+            form(name="add-estimation", method="post")
+              .form-group
+                input.form-control(type="text", name="name", placeholder="Votre prénom...")
+              .form-group
+                input.form-control(type="email", name="email", placeholder="Votre email...")
+              .form-group.m-t-md
+                input.btn.btn-default.btn-xl.wow(type="submit", value="Merci !")
+  section#contact
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          h2.section-heading Nous contacter
+          hr.primary
+          p
+            | Envie de vous lancer avec nous dans cette incroyable histoire ?! Superbe ! N'hésitez pas à nous téléphoner ou à nous envoyer un email et nous reviendrons vers vous le plus rapidement possible !
+        .col-lg-4.col-lg-offset-2.text-center
+          i.fa.fa-phone.fa-3x.wow.bounceIn
+          p +32 495 177 562
+        .col-lg-4.text-center
+          i.fa.fa-envelope-o.fa-3x.wow.bounceIn(data-wow-delay='.1s')
+          p
+            a(href='mailto:feedback@nunchl.com') feedback@nunchl.com
