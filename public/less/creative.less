@@ -1,12 +1,8 @@
 @import "variables.less";
 @import "mixins.less";
 
-.welcome{
-  font-weight: 100 !important;
-}
-
-
 // Global Components
+
 html,
 body {
     height: 100%;
@@ -72,14 +68,27 @@ aside {
     padding: 50px 0;
 }
 
-.no-padding {
-    padding: 0;
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
 }
 
 // Helpers
 
-.m-b-md { margin-bottom: 25px; }
-.m-t-md { margin-top: 25px;    }
+.m-b-md     { margin-bottom: 25px; }
+.m-t-md     { margin-top: 25px;    }
+.no-padding { padding: 0;          }
 
 // Logo
 
@@ -209,7 +218,7 @@ header {
         width: 100%;
         .header-content-inner {
             h1 {
-                font-weight: 700;
+                font-weight: 100;
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
