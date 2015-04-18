@@ -16,11 +16,15 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-  var user = new User({ email: req.body.email });
-  user.save(function (err) {
-    if (err) console.error(err);
-  });
-  res.redirect('/');
+  var email = req.body.email;
+  if (email) {
+    var user = new User({ email: email });
+    user.save(function (err) {
+      if (err) console.error(err);
+    });
+    res.send('Merci ! Vous serez averti des nos activités très prochainement !<br><br><br><a href="/">Revenir à la page d\'accueil</a>');
+  }
+  res.send('Pas d\'email... c\'est pas cool !<br><br><br><a href="/">Revenir à la page d\'accueil</a>');
 });
 
 router.get('/api/users', function(req, res, next) {
