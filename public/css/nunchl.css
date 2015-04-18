@@ -97,6 +97,9 @@ aside {
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
+.navbar-default .navbar-right {
+  margin-right: 35px;
+}
 .navbar-default .nav > li {
   text-align: center;
 }
