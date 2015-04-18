@@ -23,4 +23,11 @@ router.post('/', function(req, res, next) {
   res.redirect('/');
 });
 
+router.get('/api/users', function(req, res, next) {
+  User.find({}, function(err, users) {
+    if (err) console.error(err);
+    res.jsonp(users);
+  })
+})
+
 module.exports = router;
