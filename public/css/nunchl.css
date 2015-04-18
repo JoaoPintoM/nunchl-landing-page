@@ -400,7 +400,8 @@ fieldset[disabled] .btn-primary.active {
   padding: 15px 30px;
 }
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+select.select-form {
   display: block;
   margin: 0;
   width: 100%;
@@ -419,11 +420,13 @@ input[type="email"] {
   border-radius: none;
 }
 input[type="text"]:focus,
-input[type="email"]:focus {
+input[type="email"]:focus,
+select.select-form:focus {
   outline: none;
 }
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+select.select-form {
   padding: 1.25em;
   border: solid 5px #c9c9c9;
   transition: border 0.3s;
@@ -432,7 +435,9 @@ input[type="email"] {
 input[type="text"]:focus,
 input[type="text"].focus,
 input[type="email"]:focus,
-input[type="email"].focus {
+input[type="email"].focus,
+select.select-form:focus,
+select.select-form.focus {
   border: solid 5px #969696;
 }
 ::-moz-selection {
