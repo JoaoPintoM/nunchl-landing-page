@@ -292,8 +292,8 @@ header#error {
 }
 .btn-default {
   color: #222222;
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: white;
+  border-color: white;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -331,15 +331,15 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: white;
+  border-color: white;
 }
 .btn-default .badge {
-  color: #ffffff;
+  color: white;
   background-color: #222222;
 }
 .btn-primary {
-  color: #ffffff;
+  color: white;
   background-color: #7198db;
   border-color: #7198db;
   -webkit-transition: all 0.35s;
@@ -352,7 +352,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #ffffff;
+  color: white;
   background-color: #5d89d6;
   border-color: #5583d4;
 }
@@ -384,12 +384,12 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-primary .badge {
   color: #7198db;
-  background-color: #ffffff;
+  background-color: white;
 }
 .btn {
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   border: none;
-  border-radius: 300px;
+  border-radius: 0;
   font-weight: 700;
   text-transform: uppercase;
 }
