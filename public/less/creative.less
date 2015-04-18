@@ -89,7 +89,7 @@ aside {
 
 .navbar-default {
     background-color: @theme-primary;
-    border-color: fade(@theme-dark, 5%);
+    border-color: lighten(@theme-primary, 10%);
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
@@ -97,9 +97,22 @@ aside {
         .sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
+        // &:hover,
+        // &:focus {
+        //     color: darken(@theme-primary, 10%);
+        // }
+    }
+    .navbar-collapse {
+      border-color: lighten(@theme-primary, 10%);
+    }
+    .navbar-toggle {
+        border-color: white;
         &:hover,
         &:focus {
-            color: darken(@theme-primary, 10%);
+           background-color: transparent;
+        }
+        .icon-bar {
+            background-color: white;
         }
     }
     .nav {
@@ -111,14 +124,15 @@ aside {
                 font-weight: 700;
                 font-size: 13px;
                 color: white;
-                // &:hover {
-                //     color: @theme-grey;
-                // }
+                &:hover {
+                    color: white;
+                }
             }
             &.active {
                 > a,
+                > a:hover,
                 > a:focus {
-                    // color: @theme-grey !important;
+                    color: white;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -127,6 +141,7 @@ aside {
             }
         }
     }
+
     @media (min-width: 768px) {
         background-color: transparent;
         border-color: fade(white, 30%);
@@ -146,7 +161,7 @@ aside {
         }
         &.affix {
             background-color: @theme-primary;
-            border-color: fade(@theme-primary, 5%);
+            border-color: transparent;
             .navbar-header .navbar-brand {
                 color: white;
                 font-size: 14px;
