@@ -1,6 +1,10 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  header#error
+    .header-content
+      .header-content-inner
+        h1= message
+        h2= error.status
+        hr.light
+        a.btn.btn-primary.btn-xl.page-scroll(href='/') Retour à l'accueil

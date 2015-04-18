@@ -208,6 +208,9 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
 }
+header#error {
+  background-image: url('../img/header-404.jpg');
+}
 .section-heading {
   margin-top: 0;
 }

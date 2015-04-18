@@ -1,8 +1,14 @@
-var express = require('express');
-var router = express.Router();
+var mongoose = require('mongoose');
+var express  = require('express');
+var router   = express.Router();
 
-var config = require('../configuration')
-var GoogleSpreadsheet = require("google-spreadsheet");
+// mongoose configuration
+mongoose.connect('mongodb://localhost/nunchl-landing-page');
+
+var User = mongoose.model('User', {
+  email: { type: String, lowercase: true, trim: true },
+  createdAt: { type: Date, default: Date.now }
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -10,35 +16,10 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-
-  // var mySheet = new GoogleSpreadsheet(config.NUNCHL_GOOGLE_SPREADSHEET_KEY);
-
-  // mySheet.setAuth(
-  //   config.NUNCHL_GOOGLE_EMAIL,
-  //   config.NUNCHL_GOOGLE_EMAIL_PASSWORD,
-  //   function(err) {
-  //   if (err) console.error(err);
-  //   mySheet.getInfo(function(err, sheetInfo) {
-  //       console.log( sheetInfo.title + ' is loaded' );
-  //       // use worksheet object if you want to forget about ids
-  //       sheetInfo.worksheets[0].getRows( function( err, rows ){
-  //           rows[0].colname = 'new val';
-  //           rows[0].save();
-  //           rows[0].del();
-  //       })
-  //   })
-
-  //   // column names are set by google based on the first row of your sheet
-  //   mySheet.addRow( 2, { colname: 'col value'} );
-
-  //   mySheet.getRows( 2, {
-  //       start: 100,         // start index
-  //       num: 100            // number of rows to pull
-  //   }, function(err, row_data){
-  //       // do something...
-  //   });
-  // });
-
+  var user = new User({ email: req.body.email });
+  user.save(function (err) {
+    if (err) console.error(err);
+  });
   res.redirect('/');
 });
 
