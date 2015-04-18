@@ -1,6 +1,11 @@
 @import "variables.less";
 @import "mixins.less";
 
+.welcome{
+  font-weight: 100 !important;
+}
+
+
 // Global Components
 html,
 body {
@@ -89,7 +94,8 @@ aside {
 
 .navbar-default {
     background-color: @theme-primary;
-    border-color: lighten(@theme-primary, 10%);
+    border-color: transparent;
+    // border-color: lighten(@theme-primary, 10%);
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
@@ -144,7 +150,8 @@ aside {
 
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: fade(white, 30%);
+        // border-color: fade(white, 30%);
+        border-color: transparent;
         .navbar-header .navbar-brand {
             color: white;
             &:hover,

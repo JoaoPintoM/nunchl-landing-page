@@ -1,10 +1,13 @@
+.welcome {
+  font-weight: 100 !important;
+}
 html,
 body {
   height: 100%;
   width: 100%;
 }
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
   border-color: #7198db;
@@ -30,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 p {
   font-size: 16px;
@@ -69,15 +72,15 @@ aside {
 }
 .navbar-default {
   background-color: #7198db;
-  border-color: #9ab6e5;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  border-color: transparent;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: white;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -122,7 +125,7 @@ aside {
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: transparent;
   }
   .navbar-default .navbar-header .navbar-brand {
     color: white;
@@ -252,7 +255,7 @@ header .header-content .header-content-inner p {
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   padding: 0 15px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -286,8 +289,8 @@ header .header-content .header-content-inner p {
 }
 .btn-default {
   color: #222222;
-  background-color: white;
-  border-color: white;
+  background-color: #ffffff;
+  border-color: #ffffff;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -325,15 +328,15 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: white;
-  border-color: white;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 .btn-default .badge {
-  color: white;
+  color: #ffffff;
   background-color: #222222;
 }
 .btn-primary {
-  color: white;
+  color: #ffffff;
   background-color: #7198db;
   border-color: #7198db;
   -webkit-transition: all 0.35s;
@@ -346,7 +349,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: white;
+  color: #ffffff;
   background-color: #5d89d6;
   border-color: #5583d4;
 }
@@ -378,10 +381,10 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-primary .badge {
   color: #7198db;
-  background-color: white;
+  background-color: #ffffff;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   border: none;
   border-radius: 300px;
   font-weight: 700;
