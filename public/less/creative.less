@@ -76,15 +76,24 @@ aside {
 .m-b-md { margin-bottom: 25px; }
 .m-t-md { margin-top: 25px;    }
 
+// Logo
+
+.logo{
+  height: 25px;
+  margin-top: -5px;
+  margin-left: 5px;
+}
+
+
 // Navigation
 
 .navbar-default {
-    background-color: white;
+    background-color: @theme-primary;
     border-color: fade(@theme-dark, 5%);
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
-        color: @theme-primary;
+        color: white;
         .sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
@@ -95,20 +104,21 @@ aside {
     }
     .nav {
         > li {
+            text-align: center;
             > a,
             > a:focus {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: @theme-dark;
-                &:hover {
-                    color: @theme-primary;
-                }
+                color: white;
+                // &:hover {
+                //     color: @theme-grey;
+                // }
             }
             &.active {
                 > a,
                 > a:focus {
-                    color: @theme-primary !important;
+                    // color: @theme-grey !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -135,22 +145,22 @@ aside {
             }
         }
         &.affix {
-            background-color: white;
-            border-color: fade(@theme-dark, 5%);
+            background-color: @theme-primary;
+            border-color: fade(@theme-primary, 5%);
             .navbar-header .navbar-brand {
-                color: @theme-primary;
+                color: white;
                 font-size: 14px;
-                &:hover,
-                &:focus {
-                    color: darken(@theme-primary, 10%);
-                }
+                // &:hover,
+                // &:focus {
+                //     color: darken(@theme-grey, 10%);
+                // }
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: @theme-dark;
-                &:hover {
-                    color: @theme-primary;
-                }
+                color: white;
+                // &:hover {
+                //     color: @theme-grey;
+                // }
             }
         }
     }
